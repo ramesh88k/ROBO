@@ -54,11 +54,11 @@ class allfunctions:
         return hessian
 
 
-
-myclass1 = allfunctions()
-myclass1.delta_p_bonds()
-print(myclass1.bonds_delta)
-# print(myclass1.delta_p_bonds())
-
-# print(myclass1.delta_p_j_bonds(5))
+#
+# myclass1 = allfunctions()
+# myclass1.delta_p_bonds()
+# print(myclass1.bonds_delta)
+# # print(myclass1.delta_p_bonds())
+#
+# # print(myclass1.delta_p_j_bonds(5))
 

@@ -5,14 +5,15 @@ import configparser
 
 from ROBO.loadvariables import loadinifile
 
-vv = loadinifile()
+# vv = loadinifile()
 
-print(vv.weight_Bonds_min)
+# print(vv.weight_Bonds_min)
 
-# # imports variables in Variable.ini as dict to config
-# config = configparser.ConfigParser()
-# config.read('../config/variable.ini')
-#
-#
-# print(config['weights']['weight_Bonds_min'])
-# print(config['default']['N'])
+
+class allconstraints(object):
+    def __init__(self):
+        self.vv = loadinifile()
+        self.constraints = []
+
+    def add_initial_value_constraint(self,theta,p0):
+        self.constraints += [p0*theta[0,:] == self.vv.asset_initial_value]
