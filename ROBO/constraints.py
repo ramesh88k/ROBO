@@ -17,3 +17,5 @@ class allconstraints(object):
 
     def add_initial_value_constraint(self,theta,p0):
         self.constraints += [p0*theta[0,:] == self.vv.asset_initial_value]
+
+#comment
